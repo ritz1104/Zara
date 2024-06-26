@@ -1,39 +1,516 @@
+@font-face {
+    font-family: yoyo;
+    src: url(./pxiEyp8kv8JHgFVrJJfecg.woff2);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Gilroy;
 }
 html, body {
     width: 100%;
     height: 100%
 }
-.bottom{
-    width: 100%;
-    height: 40%;
-    background-image: linear-gradient(transparent,black);
+
+body{
+    overflow-x: hidden;
+}
+nav{
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 2vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+nav h1{
+    width: 25vw;
+    font-size: 2vw;
+    text-align: center;
+    mix-blend-mode: difference;
+    background-clip: transparent;
+}
+nav .menu{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.menu h2{
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+nav .menu .lines{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+nav .menu .line-1{
+    width: 3vw;
+    height: 0.2em;
+    background-color: #000;
+}
+nav .profile{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    
+}
+.profile h5{
+    font-size: 1.5vw;
+    font-weight: 900;
+    mix-blend-mode: difference;
+    color: #000000;
+}
+.section-1{
+    width: 100vw;
+    height: 100vh;
+}
+.section-1 .video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.text{
     position: absolute;
-    bottom: -40%;
-    transition: all ease 0.5s;
-    line-height: 1;
-}
-
-.bottom h1{
-    font-size: 45px;
-    font-family: monospace;
-    padding: 10px 0px 10px 10px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     color: #fff;
-    font-weight: 600;
-    letter-spacing: -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    
 }
-.bottom h6{
-    font-size: 20px;
-    color: white;
-    font-weight: 600;
-    padding: 0px 10px;
+.text h4{
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+.text h1{
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 300;
+    line-height: 7vw;
+    text-transform: uppercase;
+}
+.text button{
+    margin-top: 4vw;
+    padding: 1vw 2vw;
+    border: 2px solid #fff;
+   background-color:transparent;
+   color: #fff;
+   font-size: 1.2vw;
+   font-weight: 600;
+   border-radius: 50px;
+   text-transform: uppercase;
+
+}
+.text h6{
+    font-size: 1.2vw;
+    margin-top: 10vw;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.section-2{
+    width: 100vw;
+    height: 100vh;
+    background-color:#F4F2EF;
+    position: relative;
+}
+
+.section-2 h1{
+    width: 100vw;
+    height: 100vh;
+    font-weight: 300;
+    font-size: 8vw;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: absolute;
+    display: flex;
+    gap: 5vw;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+}
+.section-2 .card1{
+    width: 25vw;
+    height: 30vw;
+    background-color: #FFFFFF;
+
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.card1 .cardpic1{
+    width: 100%;
+    height: 80%;
+
+}
+.cardpic1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.card1 .txt1{
+    padding: 1vw 1.5vw;
+   
+}
+.txt1 h2{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.txt1 h5{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+.section-2 .card2{
+    width: 25vw;
+    height: 30vw;
+    background-color: #FFFFFF;
+  
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.card2 .cardpic2{
+    width: 100%;
+    height: 80%;
+
+}
+.cardpic2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.card2 .txt2{
+    padding: 1vw 1.5vw;
+   
+}
+.txt2 h2{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.txt2 h5{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.section-2 .card3{
+    width: 25vw;
+    height: 30vw;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.card3 .cardpic3{
+    width: 100%;
+    height: 80%;
+
+}
+.cardpic3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.card3 .txt3{
+    padding: 1vw 1.5vw;
+   
+}
+.txt3 h2{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.txt3 h5{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.section-2 .card4{
+    width: 25vw;
+    height: 30vw;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.card4 .cardpic4{
+    width: 100%;
+    height: 80%;
+
+}
+.cardpic4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.card4 .txt4{
+    padding: 1vw 1.5vw;
+   
+}
+.txt4 h2{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.txt4 h5{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.section-2 .card5{
+    width: 25vw;
+    height: 30vw;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.card5 .cardpic5{
+    width: 100%;
+    height: 80%;
+
+}
+.cardpic5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.card5 .txt5{
+    padding: 1vw 1.5vw;
+   
+}
+.txt5 h2{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.txt5 h5{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.section-2 .card6{
+    width: 25vw;
+    height: 30vw;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.card6 .cardpic6{
+    width: 100%;
+    height: 80%;
+
+}
+.cardpic6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.card6 .txt6{
+    padding: 1vw 1.5vw;
+   
+}
+.txt6 h2{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.txt6 h5{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.section-2 .card7{
+    width: 25vw;
+    height: 30vw;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.card7 .cardpic7{
+    width: 100%;
+    height: 80%;
+
+}
+.cardpic7 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.card7 .txt7{
+    padding: 1vw 1.5vw;
+   
+}
+.txt7 h2{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.txt7 h5{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.section-2 .card8{
+    width: 25vw;
+    height: 30vw;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.card8 .cardpic8{
+    width: 100%;
+    height: 80%;
+
+}
+.cardpic8 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.card8 .txt8{
+    padding: 1vw 1.5vw;
+   
+}
+.txt8 h2{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.txt8 h5{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.section-3{
+    width: 100vw;
+    height: 100vh;
+    background-color:#1A1A1A;
+}
+
+.text-1{
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-1 h4{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+.text-1 h1{
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 300;
+    line-height: 7vw;
+    text-transform: uppercase;
+}
+.text-1 button{
+    margin-top: 4vw;
+    padding: 1vw 2vw;
+    border: 2px solid #fff;
+   background-color:transparent;
+   color: #fff;
+   font-size: 1.2vw;
+   font-weight: 600;
+   border-radius: 50px;
+   text-transform: uppercase;
 
 }
 
-.box:hover .bottom{
-  bottom: 0;  
+.section-4{
+    width: 100vw;
+    height: 100vh;
+    background-color:#1A1A1A;
+}
+
+.text-2{
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-2 h4{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+.text-2 h1{
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 300;
+    line-height: 7vw;
+    text-transform: uppercase;
+}
+.text-2 button{
+    margin-top: 4vw;
+    padding: 1vw 2vw;
+    border: 2px solid #fff;
+   background-color:transparent;
+   color: #fff;
+   font-size: 1.2vw;
+   font-weight: 600;
+   border-radius: 50px;
+   text-transform: uppercase;
+
+}
+.section-5{
+    width: 100vw;
+    height: 100vh;
+    background-color:#1A1A1A;
+}
+
+.text-3{
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-3 h4{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+.text-3 h1{
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 300;
+    line-height: 7vw;
+    text-transform: uppercase;
+}
+.text-3 button{
+    margin-top: 4vw;
+    padding: 1vw 2vw;
+    border: 2px solid #fff;
+   background-color:transparent;
+   color: #fff;
+   font-size: 1.2vw;
+   font-weight: 600;
+   border-radius: 50px;
+   text-transform: uppercase;
 }
