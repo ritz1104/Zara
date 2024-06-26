@@ -3,273 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZARA</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"  rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main w-full font-['gilroy'] h-screen relative">
-        <div class="nav w-full">
-            <div class="navpart-1 flex w-full justify-between px-8 py-3 items-center">
-               <a class="text-3xl font-semibold" href="#">ZARA</a>
-              <div class=".elem flex gap-8 items-center">
-                <button class="px-5 py-1 border-[1px] border-black rounded-full font-semibold">Sign up</button>
-                <button class="px-5 py-1 border-[1px] border-black rounded-full bg-black text-white font-semibold">Login</button>
-                <a class="text-lg font-semibold tracking-wide" href="#">Help</a>
-              </div>
+    <nav>
+        <div class="menu">
+           <div class="lines">
+            <div class="line-1"></div>
+            <div class="line-1"></div>
+           </div>
+            <h2>Menu</h2>
+        </div>
+        <h1>ZARA</h1>
+        <div class="profile">
+            <h5>Search</h5>
+            <h5>Sign in</h5>
+            <h5><i class="ri-shopping-cart-line"></i></h5>
+        </div>
+    </nav>
+    <section class="section-1">
+            <video class="video" autoplay loop muted poster="path/to/poster-image.jpg">
+                <source src="./Etro_Textile_1920x1080_Desktop.mp4" type="video/mp4">
+            </video>
+           <div class="text">
+            <h4>New Collection</h4>
+            <h1>Exclusive <br> Fashion Merchandise</h1>
+            <button>Discover New Fabrics</button>
+            <h6>Scroll TO discover</h6>
+           </div>
+    </section>
+    <section class="section-2">
+        <h1>Discover <br> New clothes</h1>
+       <div class="cards">
+        <div class="card1">
+            <div class="cardpic1">
+                <img src="./04198723401-a1.jpg" alt="">
             </div>
-            <div class="navpart-2 w-[62%] ml-auto flex items-cente justify-between mt-5 px-5">
-             <div class="atags flex gap-12 ">
-                <a class="text-[17px] font-semibold  flex items-center" href="#">Men <i class="ri-arrow-down-s-fill"></i></a>
-                <a class="text-[17px] font-semibold  flex items-center" href="#">Women <i class="ri-arrow-down-s-fill"></i></a>
-                <a class="text-[17px] font-semibold  flex items-center" href="#">Kids <i class="ri-arrow-down-s-fill"></i></a>
-                <a class="text-[17px] font-semibold  flex items-center" href="#">Beauty <i class="ri-arrow-down-s-fill"></i></a>
-             </div>
-             <div class="search text-[20px] font-semibold  flex items-center gap-10" >
-                <i class="ri-search-line"></i>
-                <i class="ri-heart-line"></i>
-                <i class="ri-shopping-bag-3-line"></i>
-             </div>
+            <div class="txt1">
+                <h2>Trending</h2>
+            <h5>Shirts</h5>
             </div>
         </div>
-        <div class="scrollingpic w-full  mt-5" style="height: calc(100% - 8rem);">
-            <div class="text absolute z-[99] top-2/3 left-[15%]">
-                <h1 class="text-3xl font-semibold ">Classic Exclusive</h1>
-                <h1 class="text-2xl font-bold ">Women's Collection</h1>
-                <h5 class="text-xl font-semibold mt-2">UPTO 40% OFF</h5>
-             <button class="px-5 py-2 bg-black rounded-full text-white font-semibold text-sm mt-3">Shop Now <i class="ri-arrow-right-line"></i></button>
+        <div class="card2">
+            <div class="cardpic2">
+                <img src="./04198723401-a1.jpg" alt="">
             </div>
-            <div class="images w-full h-full relative overflow-hidden">
-                <img class="h-full w-full object-cover object-center absolute" src="https://images.unsplash.com/photo-1560253034-1a9c043ffb28?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                <!-- <img class="h-full w-full object-cover object-center absolute" src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
-            </div>
-           
-        </div>
-        <div class="categories w-[98%] ml-auto mt-10">
-            <h1 class="text-7xl font-bold ml-16">Shop By Categories</h1>
-            <div class="menscontainer mt-10 ">
-                    <h1 class="text-4xl font-semibold ml-16">Men's</h1>
-                    <div class="cards w-full mt-5 flex  ">
-                       <div class="row1 w-full flex items-center justify-evenly ">
-                        <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full object-cover  relative">
-                                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1609178879134-23206a67e48d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                <div class="bottom">
-                                    <h1>Shirts</h1>
-                                    <h6>Upto 70-80% OFF</h>
-                                    </div>
-                            </div>
-                          </div>
-                         <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full object-cover relative">
-                                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                <div class="bottom">
-                                    <h1>T-shirts</h1>
-                                    <h6>Upto 50-70% OFF</h>
-                                    </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full object-cover relative">
-                                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                <div class="bottom">
-                                    <h1>Jeans</h1>
-                                    <h6>Upto 40-60% OFF</h>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full object-cover relative">
-                                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                <div class="bottom">
-                                    <h1>Shoes</h1>
-                                    <h6>Upto 30-60% OFF</h>
-                                    </div>
-                            </div>
-                        </div>
-                       </div>
-                       </div>
-                </div>
-                <div class="womenscontainer mt-10 ">
-                    <h1 class="text-4xl font-semibold ml-16">Women's</h1>
-                    <div class="cards w-full mt-5 flex items-center justify-evenly  ">
-                        <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center ">
-                            <div class="box w-full h-full relative">
-                                <img class="w-full h-full object-cover object-top" src="https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29058786/2024/4/18/d2a3b780-0289-4e75-9404-d3e47f4679a71713459155314TokyoTalkiesWomenWinterBloomVolumeSleeveV-NeckJumpsuit1.jpg" alt="">
-                                <div class="bottom">
-                                    <h1>Trendy</h1>
-                                    <h6>Min. 50% OFF</h>
-                                    </div>
-                            </div>
-                          </div>
-                         <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full relative">
-                                <img class="w-full h-full object-cover object-top" src="https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/22117166/2023/3/7/04c5931d-f1fa-486f-986f-e17c68f0da0c1678174195672-Black-cotton-mirror-embroidered-detail-ethnic-printed-straig-1.jpg" alt="">
-                                <div class="bottom">
-                                    <h1>Kurtis</h1>
-                                    <h6>Min. 70% OFF</h>
-                                    </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full relative">
-                                <img class="w-full h-full object-cover object-top" src="https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/22751732/2023/4/13/cbc93b2d-4a2a-4193-a0cc-b4505ae2bae81681350302616KALINIOffWhiteBhagalpuriSilkEthnicPrintedFestiveSareewithMat1.jpg" alt="">
-                                <div class="bottom">
-                                    <h1>Saree</h1>
-                                    <h6>Min. 70% OFF</h>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full relative">
-                                <img class="w-full h-full object-cover" src="https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25203652/2023/9/28/b5b49eea-495a-418f-a757-f7ab4430ff041695841574586DenillBrownBlockPumpswithBuckles1.jpg" alt="">
-                                <div class="bottom">
-                                    <h1>Footwear</h1>
-                                    <h6>Upto 40-80% OFF</h>
-                                    </div>
-                            </div>
-                        </div>
-                       </div>
-                       </div>
-               <div class="Kidscontainer mt-10 ">
-                    <h1 class="text-4xl font-semibold ml-16">Kid's</h1>
-                    <div class="cards w-full mt-5 flex justify-evenly items-center">
-                        <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center ">
-                            <div class="box w-full h-full relative">
-                                <img class="w-full h-full object-cover object-top" src="https://plus.unsplash.com/premium_photo-1698305282759-0d295cbb96d6?q=80&w=1881&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                <div class="bottom">
-                                    <h1>value packs</h1>
-                                    <h6>Upto 40-80% OFF</h>
-                                    </div>
-                            </div>
-                          </div>
-                         <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full relative">
-                                <img class="w-full h-full object-cover object-top" src="https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/26828816/2024/1/8/f9c2ba6d-fbec-427d-b134-aa0b9c7661b81704708735741StyleCastInfantGirlsStripedSleevelessBodysuit1.jpg" alt="">
-                                 <div class="bottom">
-                                    <h1>One packs</h1>
-                                    <h6>Min. 40% OFF</h>
-                                    </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full relative">
-                                <img class="w-full h-full object-cover object-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/24380750/2023/8/7/b7d75d7b-664f-48d2-bdd1-971e39def7d71691402682031KurtaSets1.jpg" alt="">
-                                 <div class="bottom">
-                                    <h1>Ethnic Wear</h1>
-                                    <h6>Upto 30-70% OFF</h>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                            <div class="box w-full h-full relative">
-                                <img class="w-full h-full object-cover" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/28229546/2024/3/13/518d3fb8-a379-492d-afc7-fab5135cc8501710272989428BAESDLedLightingPandaCharacterClogsShoesforBoysGirls1.jpg" alt="">
-                                 <div class="bottom">
-                                    <h1>Flip Flops</h1>
-                                    <h6>Min. 70% OFF</h>
-                                    </div>
-                            </div>
-                        </div>
-                       </div>
-                       </div>
-                    <div class="beutycontainer mt-10 ">
-                        <h1 class="text-4xl font-semibold ml-16">Beauty</h1>
-                        <div class="cards w-full mt-5 flex  items-center justify-evenly ">
-                            <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center ">
-                                <div class="box w-full h-full relative">
-                                    <img class="w-full h-full object-cover object-top" src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                                    <div class="bottom">
-                                        <h1>Perfumes</h1>
-                                        <h6>Min. 60-70% OFF</h>
-                                        </div>
-                                </div>
-                              </div>
-                             <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                                <div class="box w-full h-full relative">
-                                    <img class="w-full h-full object-cover object-top" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17351510/2024/1/3/ffb82091-2102-410c-bf79-6f01ab57a4411704278075111-Pilgrim-Squalane-Glow-Moisturizer-with-Vitamin-C--Niacinamid-1.jpg" alt="">
-                                    <div class="bottom">
-                                        <h1>Moisturiser</h1>
-                                        <h6>Upto 85% OFF</h>
-                                        </div>
-                                </div>
-                                
-                            </div>
-                            <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                                <div class="box w-full h-full relative">
-                                    <img class="w-full h-full object-cover object-top" src="https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/11629078/2023/5/26/d24846f8-82a8-4a3d-95b9-047d642cc17a1685095820007-Lakme-Sun-Expert-Ultra-Matte-SPF-40-PA-Compact---7g-73216850-1.jpg" alt="">
-                                    <div class="bottom">
-                                        <h1>Makeup</h1>
-                                        <h6>Min. 40% OFF</h>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="card w-72 h-80 shrink-0 bg-zinc-300 rounded-lg flex flex-col overflow-hidden items-center">
-                                <div class="box w-full h-full relative">
-                                    <img class="w-full h-full object-cover" src="https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29119924/2024/4/24/228e102f-95b0-4127-b55e-26e9ccb674c71713945960328deconstructFluidBrighteningSunscreen-50gm1.jpg" alt="">
-                                    <div class="bottom">
-                                        <h1>Sunscreen</h1>
-                                        <h6>Upto. 40-50% OFF</h>
-                                        </div>
-                                </div>
-                            </div>
-                           </div>
-                          
-                    </div>
-                </div>
-            <div class="fotter w-full bg-zinc-100/50 mt-20">                
-                <div class="ftcontainer w-full flex justify-evenly py-20">
-                    <div class="online flex flex-col  gap-5 ">
-                        <h4 class=" font-semibold uppercase">Online Shopping</h4>
-                        <div class="as flex flex-col gap-2">
-                            <a class="text-sm font-medium text-zinc-500" href="#">Men</a>
-                            <a class="text-sm font-medium text-zinc-500" href="#">Women</a>
-                            <a class="text-sm font-medium text-zinc-500" href="#">Kids</a>
-                            <a class="text-sm font-medium text-zinc-500" href="#">Beauty</a>
-                            <a class="text-sm font-medium text-zinc-500" href="#">Gift Cards</a>
-                        </div>
-                    </div>
-                    <div class="customers flex flex-col  gap-5 ">
-                        <h4 class="font-semibold uppercase">Customer Service</h4>
-                        <div class="as flex flex-col gap-2">
-                            <a class="text-sm font-medium text-zinc-500" href="#">Contact Us</a>
-                        <a class="text-sm font-medium text-zinc-500" href="#">Order Tracking</a>
-                        <a class="text-sm font-medium text-zinc-500" href="#">Shipping & Delivery</a>
-                        <a class="text-sm font-medium text-zinc-500" href="#">Return & Exchanges</a>
-                        <a class="text-sm font-medium text-zinc-500" href="#">FAQs</a>
-                        </div>
-                    </div>
-                    <div class="Information flex flex-col  gap-2 ">
-                        <h4 class="font-semibold uppercase">Information</h4>
-                        <a class="text-sm font-medium text-zinc-500" href="#">About Us</a>
-                        <a class="text-sm font-medium text-zinc-500" href="#">Careers</a>
-                        <a class="text-sm font-medium text-zinc-500" href="#">Store Locator</a>
-                        <a class="text-sm font-medium text-zinc-500" href="#">Privacy Policy</a>
-                        <a class="text-sm font-medium text-zinc-500" href="#">Terms & Conditions</a>
-                    </div>
-                    <div class="socials">
-                        <h4 class="font-semibold uppercase">Follow Us</h4>
-                        <div class="as flex gap-2">
-                            <a class="text-lg" href="#"><i class="ri-instagram-line"></i></a>
-                            <a class="text-lg" href="#"><i class="ri-facebook-line"></i></a>
-                            <a class="text-lg" href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a class="text-lg" href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                            <a class="text-lg" href="#"><i class="ri-youtube-line"></i></a>
-                            <a class="text-lg" href="#"><i class="ri-spotify-line"></i></a>
-
-                        </div>
-                    </div>
-                </div>
+            <div class="txt2">
+                <h2>Trending</h2>
+            <h5>Shirts</h5>
             </div>
         </div>
-         
-
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <div class="card3">
+            <div class="cardpic3">
+                <img src="./04198723401-a1.jpg" alt="">
+            </div>
+            <div class="txt3">
+                <h2>Trending</h2>
+            <h5>Shirts</h5>
+            </div>
+        </div>
+        <div class="card4">
+            <div class="cardpic4">
+                <img src="./04198723401-a1.jpg" alt="">
+            </div>
+            <div class="txt4">
+                <h2>Trending</h2>
+            <h5>Shirts</h5>
+            </div>
+        </div>
+        <div class="card5">
+            <div class="cardpic5">
+                <img src="./04198723401-a1.jpg" alt="">
+            </div>
+            <div class="txt5">
+                <h2>Trending</h2>
+            <h5>Shirts</h5>
+            </div>
+        </div>
+        <div class="card6">
+            <div class="cardpic6">
+                <img src="./04198723401-a1.jpg" alt="">
+            </div>
+            <div class="txt6">
+                <h2>Trending</h2>
+            <h5>Shirts</h5>
+            </div>
+        </div>
+        <div class="card7">
+            <div class="cardpic7">
+                <img src="./04198723401-a1.jpg" alt="">
+            </div>
+            <div class="txt7">
+                <h2>Trending</h2>
+            <h5>Shirts</h5>
+            </div>
+        </div>
+        <div class="card8">
+            <div class="cardpic8">
+                <img src="./04198723401-a1.jpg" alt="">
+            </div>
+            <div class="txt8">
+                <h2>Trending</h2>
+            <h5>Shirts</h5>
+            </div>
+        </div>
+       </div>
+    </section>
+    <section class="section-3">
+        <div class="text-1">
+            <h4>STRIKING, SLEEK AND STYLISH</h4>
+            <h1>Mens <br> Fashion</h1>
+            <button>Explore Collection</button>
+           </div>
+    </section>
+    <section class="section-4">
+        <div class="text-2">
+            <h4>Tranding, Branded and Fashionable</h4>
+            <h1>Women <br> Fashion</h1>
+            <button>Explore Collection</button>
+           </div>
+    </section>
+    <section class="section-5">
+        <div class="text-3">
+            <h4></h4>
+            <h1>Kids <br> Fashion</h1>
+            <button>Explore Collection</button>
+           </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>
